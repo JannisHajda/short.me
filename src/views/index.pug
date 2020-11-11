@@ -1,0 +1,17 @@
+html
+    head
+        title Hello World!
+    body
+        form(action="/shorten" method="post")
+            input(type="text" placeholder="URL to be shortend" name="url")
+            br
+
+            label(for="expirationDate") Do you want your link to expire after a certain time?
+            input(type="date" id="expirationDate" name="expirationDate")
+            br
+
+            label(for="maxClicks") Do you want to enable Max Clicks?
+            input(type="number" name="maxClicks" id="maxClicks")
+            br
+
+            input(type="submit" value="Shorten my link!")
